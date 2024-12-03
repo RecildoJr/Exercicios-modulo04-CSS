@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de Iframe</title>
+
+    <style>
+        iframe {
+            width: 400px;
+            height: 400px;
+            border: 2px dashed black; /*o frameborder so aceita border de 0/1px, entao para mexer nele nos viemos para aqui*/
+        } /*As congiguraçoes no css é que prevalecem em relação as do iframe direto*/
+    </style>
+</head>
+<body>
+    <h1>Testando O Uso De Iframe</h1>
+
+    <p>Acessando o site do 
+
+        <!--Por padrao o iframe tem 300x150px-->
+     <iframe src="https://recildojr.github.io/projeto-android/" frameborder="5px" height="500px" scrolling="no"> meu primeiro site</iframe> <!--O parametro scrolling tem tres opções, (no-nao scrollar, auto/yes- to scroll), alguns navs nao aceitam o a opção "no"-->
+     </p>
+
+     <p>
+        O meu projeto cordel
+
+        <iframe src="https://gustavoguanabara.github.io" frameborder="0"><a href="https://recildojr.github.io/projeto-cordel/">O projeto cordel</a></iframe>
+     </p>
+
+     <!--O IFRAME apenas carrega sites-->
+        
+       
+</body>
+</html>
