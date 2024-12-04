@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu Primeiro Formulario</h1>
+    <form action="" method="post" autocomplete="off"> <!--Cancela aquela sugestao de preenchimento de nome-->
+        <p><label for="inome">Nome:</label> <!--cria uma ligação entre o nome e a caixa do formulario-->
+             <input type="text" name="nome" id="inome"></p> <!--O input text cria um formulario para digitar o nome/ ou seja la o que for que peças.-->
+        <p><label for="isobrenome">Sobrenome</label>
+            : <input type="text" name="sobrenome" id="isobrenome"></p><!--O name-é importante para o PHP , o id- para o javascript-->
+        <!--O input submit, é o que faz enviar-->
+        <p> <input type="submit" value="Enviar"></p>
+    </form>
+    
+    <!--usamos
+    method:"GET"; quando nao pedimos dados sensiveis (Senhas, cartao do banco, codigo...), vc so pode usar esse metodo para enviar dados de 3000bits (3k letras), nao envia fotos
+
+    method:"POST" para dados sensiveis, mais de 3k bits
+    -->
+</body>
+</html>
