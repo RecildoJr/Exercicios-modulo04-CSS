@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post">
+
+        <p>
+            <label for="iest">Estado:</label> <!--Label de elemento-->
+            <select name="estado" id="iest">
+                <option value="">---Escolha---</option> <!--Opcional-->
+                <optgroup label="Unitad states">
+                    <option value="Ny">New York</option>
+                <option value="la">Los Angels</option>
+                <option value="br">Broklyn</option>
+                </optgroup>
+
+                <optgroup label="brasil"> <!--Label de atributo-->
+                    <option value="RN">Rio grande do Norte<option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="MA">Maranhão</option>
+                </optgroup>
+            </select> <!--procure colocar em ordem alfabetica-->
+        </p>
+
+        <p>
+            <label for="iprof">Profissão</label>
+            <input type="text" name="prof" id="iprof" list="lstprof"> <!--o list="lstprof" faz aparecer a lista das profissoes listadas abaixo, e esse lstprof, levamos no id do datalist para os ligar-->
+            <datalist id="lstprof">
+                <option value="ADM">Administrador</option>
+                <option value="`CONT">Contabilista</option>
+                <option value="DEV">Desenvolvedor</option>
+                <option value="Prof">Professor</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Mensagem</label> <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Sua Mensagem Aqui"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Send">
+            <input type="reset" value="Delete">
+        </p>
+    </form>
+
+</body>
+</html>

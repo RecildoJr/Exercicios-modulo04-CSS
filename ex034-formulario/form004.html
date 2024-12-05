@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+       
+</head>
+<body>
+    <form action="cadastro.php" method="post">
+
+     <fieldset id="dados"> <!--Usamos mais o fieldset para agrupar um determinado campo semelhante. ex: um campo que pedimos dados pessoais...-->
+        <legend>Dados Pessoais</legend>
+        <p>
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome" maxlength="30" required>
+        </p>
+
+        <p>
+            <label for="iemail">e-mail</label>
+            <input type="email" name="email" id="iemail" required placeholder="@gmail.com">
+        </p>
+
+        <p>
+            <label for="iphone">telephone</label>
+            <input type="tel" name="phone" id="iphone" minlength="9" required placeholder="xx xxx xxxx">
+        </p>
+     </fieldset>
+
+        <p>
+            <input type="submit" value="Send">
+            <input type="reset" value="Delete">
+        </p>
+    </form>
+
+    <!--Estudar Mais sobre Expressoes regulares (RegEx)-->
+</body>
+</html>
