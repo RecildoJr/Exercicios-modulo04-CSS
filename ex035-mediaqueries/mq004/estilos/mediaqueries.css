@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+/*Todas as demais Medias*/
+
+/*---------------------------
+Typical device breakpoints
+-----------------------------
+celular : 600px até 768px
+tablet : 768px ate 992px
+desktop : 992px ate 1200px
+Tv : acima de 1200px
+*/
+
+@media print { /*IMPRESSÃO*/
+    body {
+        background-image: url(../imagens/back-print.jpg); /*É  desnecessario, pois ain't no way you gon print background img*/
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    main h1 {
+        font-size: 1.5em;
+            text-shadow: none;
+            color: black;
+    }
+
+    main {
+        border: 2px solid rgba(0, 0, 0, 0.459);
+    }
+
+    main::after {
+        content:'Essa impressão foi feita atraves do site https://recildojr.github.io';
+    }
+
+}
+
+
+
+@media screen and (min-width:768px) and (max-width:992px) { /*tTABLET*/
+
+    body {
+        background: url(../imagens/back-tablet.jpg);
+    }
+
+    img#phone {
+        display: none;
+    }
+    
+    img#tablet {
+        display: block;
+    }
+    
+    img#print {
+        display: none;
+    }
+    
+    img#pc {
+        display: none;
+    }
+    
+    img#tv {
+        display: none;
+    }
+    
+}
+
+@media screen  and (min-width:992px) and (max-width:1200px) { /*DESKTOP*/
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    img#phone {
+        display: none;
+    }
+    
+    img#tablet {
+        display: none;
+    }
+    
+    img#print {
+        display: none;
+    }
+    
+    img#pc {
+        display: block;
+    }
+    
+    img#tv {
+        display: none;
+    }
+    
+}
+
+@media screen  and (min-width:1200px){ /*TELAS MAIORES*/
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    main {
+        width: 700px;
+        margin: auto;
+    }
+
+    img#phone {
+        display: none;
+    }
+    
+    img#tablet {
+        display: none;
+    }
+    
+    img#print {
+        display: none;
+    }
+    
+    img#pc {
+        display: none;
+    }
+    
+    img#tv {
+        display: block;
+    }
+    
+}
